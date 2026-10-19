@@ -1,4 +1,7 @@
-# LURE-DEMO PUBLICO - Sector aeroespacial
+# LURE-DEMO PUBLICO - Sector AEROESPACIAL
 # TODO EL PODER EN MIS DEDOS
 SELLO = "LURE-LOGv1 | LEON-XALAPA | TIER_C4 | CDA2A246C493955D"
-print(f"[{d.upper()}] Prueba OK - {SELLO} - TODO EL PODER EN MIS DEDOS")
+print("==================================================")
+print(f"[{sector.upper()}] PRUEBA OK - {SELLO}")
+print(" TODO EL PODER EN MIS DEDOS - CERO ERRORES")
+print("==================================================")
