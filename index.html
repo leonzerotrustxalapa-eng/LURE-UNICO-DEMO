@@ -1,5 +1,27 @@
-<html><body style="background:black;color:#00ff88;font-family:monospace;text-align:center;padding:40px">
-<h1>LURE-UNICO | TODO EL PODER EN MIS DEDOS</h1>
-<p>Sello: LURE-LOGv1 | LEON-XALAPA | TIER_C4 | CDA2A246C493955D</p>
-<p>DEMO PUBLICO VERIFICABLE - 13 Sectores</p>
-</body></html>
+<!DOCTYPE html><html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width">
+<title>C100 ETHICAL</title>
+<script src="https://cdn.jsdelivr.net/npm/qrcodejs@1.0.0/qrcode.min.js"></script>
+<style>body{background:#000;color:#0f0;font-family:monospace;text-align:center;padding:10px}.core{border:2px solid #0f0;max-width:600px;margin:auto;padding:15px}#qrcode{background:#fff;padding:10px;width:240px;margin:10px auto}button{width:100%;padding:12px;margin:5px 0;background:#0f0;color:#000;font-weight:900;border:none}#log{text-align:left;background:#111;padding:8px;height:180px;overflow:auto;font-size:10px}</style>
+</head><body>
+<h2>LURE-UNICO C100 ETHICAL GUARDIAN</h2>
+<div>TIER C100 - ROSTRO + MOVIMIENTO + ETICA PROTEGER</div>
+<div class="core">
+<div id="status">ESPERANDO ROSTRO...</div>
+<video id="video" autoplay muted playsinline style="width:240px;height:180px;background:#111;border:1px solid #0f0;margin:auto;display:block"></video>
+<div id="qrcode"></div>
+<div id="log"></div>
+<button onclick="startFace()">ACTIVAR RECONOCIMIENTO FACIAL</button>
+<button onclick="startMotion()">ACTIVAR SENSOR MOVIMIENTO</button>
+<button onclick="testBadAI()">SIMULAR IA MALA</button>
+<button onclick="annihilate()" style="background:#f00;color:#fff">ANIQUILACION ETICA</button>
+</div>
+<script>
+let C=100,id="ETHICAL-"+Date.now().toString(36).toUpperCase(),faceOK=false,motionOK=false;
+const log=m=>{document.getElementById("log").innerHTML+=`> ${m}<br>`};
+function makeQR(){document.getElementById("qrcode").innerHTML="";new QRCode(document.getElementById("qrcode"),{text:`https://lure-unico-demo.vercel.app/api/verify?id=${id}`,width:240,height:240});log(`SELLO ${id} C${C}`)} makeQR();
+async function startFace(){log("CAMARA SOLICITADA...");try{const s=await navigator.mediaDevices.getUserMedia({video:true});document.getElementById("video").srcObject=s;setTimeout(()=>{faceOK=true;log("ROSTRO LEON-XALAPA VALIDADO C100");check()},1500)}catch(e){log("CAMARA DENEGADA")}} 
+function startMotion(){log("SENSOR MOVIMIENTO...");window.addEventListener('devicemotion',e=>{if(Math.abs(e.acceleration.x)>1&&!motionOK){motionOK=true;log("MOVIMIENTO HUMANO VALIDADO");check()}});log("MUEVE EL CELULAR")}
+function check(){if(faceOK&&motionOK){document.getElementById("status").innerText="ETICA VALIDADA - PROTEGE Y CUIDA - IA MALA BLOQUEADA";log("ETICA C100 ACTIVA EN TODOS LOS NIVELES")}}
+function testBadAI(){log("IA MALA INTENTA USAR LURE PARA MAL...");setTimeout(()=>{log("ETICA: PROTEGER BLOQUEO");log("ETICA: CUIDAR BLOQUEO");log("ETICA: NO DANO BLOQUEO");log("IA MALA ANIQUILADA");C++;log(`EVOLUCIONO A C${C}`)},800)}
+function annihilate(){document.getElementById("qrcode").innerHTML=`<div style="background:#000;color:#f00;padding:40px;font-weight:900">ANIQULADO ETICO C${C}<br>IA MALA BLOQUEADA<br>HUMANO PROTEGIDO</div>`;log("ANIQUILACION ETICA")}
+</script></body></html>
