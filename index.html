@@ -1,15 +1,27 @@
 <!DOCTYPE html>
-<html>
-<head><title>LURE-UNICO C100 - Ing. León - Acapulco Xalapa</title></head>
-<body style="background:black;color:gold;text-align:center;padding:40px">
-<h1>🔱 LURE-UNICO C100 S12</h1>
-<h2>Ing. León - Nacido Acapulco, Forjado Xalapa</h2>
-<h3>4 años Muay Thai + 1 Jiu Jitsu + Sello C0ZA26AC43955D</h3>
-<p>Mundo en Paz - Para Todo El Mundo</p>
-<br>
-<!-- CAMBIA ESTOS LINKS POR LOS TUYOS -->
-<a href="https://mpago.la/TU_LINK" style="background:gold;color:black;padding:20px;font-size:24px;text-decoration:none;border-radius:10px">💰 PAGAR CON MERCADO PAGO - CAE HOY</a>
-<br><br><br>
-<a href="https://paypal.me/TU_USUARIO" style="background:blue;color:white;padding:20px;font-size:24px;text-decoration:none;border-radius:10px">💳 PAGAR CON PAYPAL</a>
-<p><br>Licencia C100 - Soporte - Implementación Zero Trust</p>
+<html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LURE C100 - COBRO BANREGIO</title></head>
+<body style="background:#000;color:#FFD700;font-family:monospace;text-align:center;padding:20px">
+<h1>🔱 LURE-UNICO C100 S12 🔱</h1>
+<h2>Ing. León Andrés Hernández</h2>
+<p>🌊 Nacido Acapulco | 🏔️ Forjado Xalapa</p>
+<p>🥊 Muay Thai 4 años + Jiu Jitsu 1 año</p>
+<p>🔑 Sello: C0ZA26AC43955D - 100% NOMINAL</p>
+<hr>
+<h2 style="color:white">💰 PAGO DIRECTO BANREGIO - SPEI</h2>
+<div id="datos" style="background:#111;padding:20px;border:2px solid gold;border-radius:15px;margin:20px">
+<p>Cargando datos seguros...</p>
+</div>
+<a href="https://wa.me/521XXXXXXXXXX?text=Hola%20Ing.%20Leon%20quiero%20pagar%20LURE%20C100%20BANREGIO" 
+style="background:#25D366;color:white;padding:20px 30px;font-size:22px;text-decoration:none;border-radius:12px;display:inline-block;margin:20px">
+📲 PAGAR POR WHATSAPP - CAE HOY
+</a>
+<br><br>
+<p style="color:gray">Zero Trust - Tu pago protegido - Mundo en Paz</p>
+<script>
+fetch('/api/banregio').then(r=>r.json()).then(d=>{
+document.getElementById('datos').innerHTML = 
+`<p><b>Banco:</b> ${d.banco}</p><p><b>Titular:</b> ${d.titular}</p><p><b>Concepto:</b> ${d.concepto}</p><p>${d.mensaje}</p><p style="color:gold">CLABE SPEI se envía por WhatsApp seguro - No pública</p>`
+})
+</script>
 </body></html>
