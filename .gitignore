@@ -1,1 +1,6 @@
-.vercel
+escudo_leon.db
+*.log
+*.env
+.DS_Store
+node_modules/
+__pycache__/
