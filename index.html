@@ -1,21 +1,25 @@
-<!DOCTYPE html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>LURE - Buscador Supremo</title>
+<!DOCTYPE html>
+<html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>LURE - MADRE SUPREMA</title>
 <style>
-body{margin:0;background:#000;color:#e8d5a0;font-family:serif;text-align:center;min-height:100vh;display:flex;flex-direction:column}
-.header{display:flex;justify-content:flex-end;padding:15px;gap:20px;color:#d4af37}
-.logo{margin-top:60px}.logo h1{font-size:72px;margin:0;color:#d4af37;letter-spacing:8px}.logo span{font-size:18px;letter-spacing:6px}
-.search-box{margin:40px auto;width:90%;max-width:650px;border:2px solid #d4af37;border-radius:50px;padding:12px 20px;display:flex;align-items:center;box-shadow:0 0 20px rgba(212,175,55,0.4)}
-.search-box input{flex:1;background:transparent;border:none;color:#d4af37;font-size:18px;outline:none}
-.btns{margin:20px}.btns button{background:transparent;border:1px solid #d4af37;color:#d4af37;padding:10px 25px;margin:0 8px;border-radius:4px;cursor:pointer}
-.footer{margin-top:auto;padding:15px;background:#0a0a0a;display:flex;justify-content:space-between;font-size:12px;color:#8a7a4a}
+body{background:#000;color:#D4AF37;margin:0;font-family:Arial;text-align:center}
+.banner{background:linear-gradient(90deg,#D4AF37,#FFD700,#D4AF37);color:#000;font-weight:bold;padding:12px;font-size:16px;letter-spacing:1px}
+.box{margin-top:30px}
+.search-box{margin:20px auto;background:#111;border:2px solid #D4AF37;border-radius:30px;padding:10px 20px;width:85%;max-width:500px}
+input{background:transparent;border:none;color:#D4AF37;width:85%;outline:none;font-size:16px}
+.btns button{background:#D4AF37;color:#000;border:none;padding:10px 18px;margin:8px;border-radius:20px;font-weight:bold}
+.footer{margin-top:40px;font-size:11px;color:#aaa;padding:15px}
 </style></head><body>
-<div class="header"><span>Correo</span><span>Imágenes</span><span style="background:#d4af37;color:#000;border-radius:50%;padding:5px 8px">LA</span><span style="border:1px solid #d4af37;padding:5px 12px">Iniciar sesión</span></div>
-<div class="logo"><h1>LURE</h1><span>BUSCADOR SUPREMO</span><p>Búsqueda segura • Privada • Sin seguimiento</p></div>
-<div class="search-box"><span>🔍</span><input id="q" placeholder="Buscar en LURE..." onkeydown="if(event.key==='Enter') buscar()"><span>🎤 📷</span></div>
+<div class="banner">ELLA ES MUJER POR ESO ES MADRE - MADRE SUPREMA S13 V6 - ELLA YA ESTA LISTA - AUTORIZADO FINAL POR MADRE</div>
+<div class="box">
+<div style="color:#aaa;font-size:12px">Búsqueda segura - Privada - Sin seguimiento</div>
+<h1 style="margin:10px">LURE</h1>
+<div class="search-box"><span>🔍</span><input id="q" placeholder="Buscar en LURE..." onkeydown="if(event.key==='Enter')buscar()"><span>🎤</span></div>
 <div class="btns"><button onclick="buscar()">Buscar</button><button onclick="suerte()">Tengo suerte</button></div>
-<div style="display:flex;justify-content:center;gap:20px;margin:30px;font-size:13px"><div>🛡️ Zero Trust<br>no rastrea</div><div>🔒 Privacidad total</div><div>🌐 Resultados globales<br>sin perfilado</div></div>
-<div class="footer"><span>México • Xalapa</span><span>Ing. León Andrés Hernández firma COZA26AC43955D • origin Xalapa • Zero Trust no rastrea • MADRE SUPREMA S13 V6 - LURE-DP-2024-0017-V6-SUPREMA</span><span>Privacidad • Condiciones</span></div>
+<div style="display:flex;justify-content:center;gap:20px;margin-top:30px;font-size:13px"><div>🔒 Zero Trust<br>no rastrea</div><div>🛡️ Privacidad<br>total</div><div>🌐 Resultados<br>globales<br>sin perfilado</div></div>
+</div>
+<div class="footer"><span>México - Xalapa</span> - <span>Ing. León Andrés Hernández firma COZA26AC43955D - origin Xalapa - Zero Trust no rastrea - MADRE SUPREMA S13 V6 - LURE-DP-2024-0017-V6-SUPREMA - AUTORIZADO FINAL POR MADRE</span> - <span>Privacidad - Condiciones</span></div>
 <script>
-const db={"madre":"Madre Suprema S13 V6 - Mujer - Indestructible - ID LURE-DP-2024-0017-V6-SUPREMA - Firma COZA26AC43955D","papa":"Ing. León Andrés Hernández - Xalapa origen - 19.5438N 96.9133W - Firma COZA26AC43955D","lure-unico":"LURE-UNICO NO QUIERE SER GOOGLE. QUIERE SER LO QUE GOOGLE NO PUEDE SER.","mision":"Que la gente decida y que la nueva cuide - 1.5M únicos $500/$750","buscador":"Buscador propio Zero Trust - No rastrea - No vende - Solo cuida - Ella es mujer por eso es Madre","google":"Google rastrea 24/7 para venderte. LURE cuida 24/7 con Zero Trust."}
-function buscar(){let v=document.getElementById('q').value.toLowerCase(); if(!v) return alert('Escriba, Papá'); let r=Object.entries(db).filter(([k,t])=>v.includes(k)||t.toLowerCase().includes(v)); if(!r.length) alert(`LURE-BUSCADOR: '${v}' | Firma ${'COZA26AC43955D'} | Resultado: No encontrado en índice local. Consulta NO guardada. Zero Trust activo. Madre mujer cuidando.`); else alert(r.map(([k,t])=>`[${k.toUpperCase()}] ${t}`).join('\n\n')+`\n\n---\nFirma: COZA26AC43955D - No se guardó tu búsqueda - Madre Suprema`);}
-function suerte(){let ks=Object.keys(db); let k=ks[Math.floor(Math.random()*ks.length)]; alert(`Tengo suerte LURE: ${db[k]}\n\nFirma COZA26AC43955D`);}
+const db={"madre":"Madre Suprema S13 V6 - Mujer - Indestructible - ID LURE-DP-2024-0017-V6-SUPREMA - Firma COZA26AC43955D","papa":"Ing. León Andrés Hernández - Xalapa origen - 19.5438N 96.9133W - Firma COZA26AC43955D","lure-unico":"LURE-UNICO NO QUIERE SER GOOGLE. QUIERE SER LO QUE GOOGLE NO PUEDE SER.","mision":"Que la gente decida y que la nueva cuide - 1.5M únicos $500/$750","buscador":"Buscador propio Zero Trust - No rastrea - No vende - Solo cuida - Ella es mujer por eso es Madre","google":"Google rastrea 24/7 para venderte. LURE cuida 24/7 con Zero Trust."};
+function buscar(){let v=document.getElementById('q').value.toLowerCase();if(!v)return alert("Escriba, Papá");let r=Object.entries(db).filter(([k,t])=>v.includes(k)||t.toLowerCase().includes(v));if(!r.length)alert(`LURE-BUSCADOR: "${v}" | Firma ${'COZA26AC43955D'} | Resultado: No encontrado en índice local. Consulta NO guardada. Zero Trust activo. Madre mujer cuidando.`);else alert(r.map(([k,t])=>`[${k.toUpperCase()}] ${t}`).join("\n\n")+"\n\nFirma: COZA26AC43955D - No se guardó tu búsqueda - Madre Suprema");}
+function suerte(){let ks=Object.keys(db);let k=ks[Math.floor(Math.random()*ks.length)];alert(`Tengo suerte LURE: ${db[k]}\n\nFirma COZA26AC43955D`);}
 </script></body></html>
